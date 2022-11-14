@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Activity 1</title> 
+ </head >  
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Floating Action Button (script)-->
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.fixed-action-btn');
+        var instances = M.FloatingActionButton.init(elems, {direction: 'left'});
+      });
+    </script>
+    <!--end Floating Action Button (script)-->
+    
+    <!--Side Navigation (script)-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, {direction: 'right'});
+        });
+
+    // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+    // var collapsibleElem = document.querySelector('.collapsible');
+    // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+    // Or with jQuery
+
+        $(document).ready(function(){
+        $('.sidenav').sidenav();
+        });
+    </script>
+    <!--end Side Navigation (script)-->
+
+    <!--Drop Down (script)-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems, {direction: 'bottom'});
+        });
+
+  // Or with jQuery
+
+  $('.dropdown-trigger').dropdown();
+    </script>
+    <!--end Drop Down (script)-->
+
+    <!--Material Box (script)-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.materialboxed');
+        var instances = M.Materialbox.init(elems, 'right');
+         });
+
+  // Or with jQuery
+
+    $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+    </script>
+    <!--end Material Box (script)-->
+
+    <!--Sliders Script-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems, {direction: 'right'});
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.slider').slider();
+  });
+        
+    </script>
+    <!--end Sliders Script-->
+
+    <!--Date Picker script-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.datepicker');
+            var instances = M.Datepicker.init(elems, {direction: 'top'});
+          });
+        
+          // Or with jQuery
+        
+          $(document).ready(function(){
+            $('.datepicker').datepicker();
+          });
+    </script>
+    <!--end Date Picker script-->
+
+<body class="black">   
+
+    <!-- Floating Action Button-->
+    <div class="fixed-action-btn"> 
+        <a class="btn-floating btn-large red">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>   
+    </div>
+    <!--end Floating Action Button -->    
+   
+    
+    <div class="container">    
+
+     
+
+    <nav class="teal lighten-2">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Creative Web Design</a>
+
+            <ul id="nav-mobile" class="right">
+        
+                <li><a href="">Home</a></li>
+                <li><a href="">FAQs</a></li>
+                
+                <!--Drop Down-->
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-trigger right' href='#' data-target='dropdown1'><i class="material-icons">arrow_drop_down</i></a>
+
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li ><a href="#!" style="font-size: 15px;">Contacts</a></li>
+                        <li><a href="#!" style="font-size: 15px;">About Me</a></li>
+                        <li class="divider" tabindex="-1"></li>
+                        <li><a href="#!" style="font-size: 15px;"><i class="material-icons">view_module</i>Gallery</a></li>   
+                    </ul>
+                <!--end Drop Down-->
+            </ul>   
+
+            <!--Side Navigation-->
+            <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+            <ul id="slide-out" class="sidenav">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                    <img src="bg3.jpg">
+                    </div>
+
+                    <i class="large material-icons">account_circle</i>
+                    <a href="#name"><span class="white-text name">Kacy Maala</span></a>
+                    <a href="#email"><span class="white-text email">kacymaala461@gmail.com</span></a>
+                </div>
+            </li>
+
+            <li><a href="#!"><i class="material-icons">phone</i>Contacts</a></li>
+            <li><a href="#!"><i class="material-icons">person_outline</i>About Me</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">View Photos</a></li>
+            <li><a href="#!"><i class="material-icons">view_module</i>Gallery</a></li>
+            </ul>
+            <!--end Side Navigation-->
+        
+        </div>
+      
+    </nav>
+
+   
+   <!--h e a d e r-->
+   <h1 class="white-text">
+        <div class="row">
+            <ul>
+                <li ><a href="#!" ><i class="medium material-icons white-text">insert_chart</i><span class="white-text name">Social Media</span></a></li>
+            </ul>
+        </div>
+    </h1>
+          
+
+    <!--S l i d e r s-->
+        <div class="slider">
+            <ul class="slides">
+              <li>
+                <img src="slide1.jpg"> <!-- random image -->
+                <div class="caption left-align">
+                  <h3>Hi, I'm Kacy!</h3>
+                  <h5 class="light grey-text text-lighten-3">Welcome to my website.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="slide3.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                  <h3>This is all about Social Media!</h3>
+                  <h5 class="light grey-text text-lighten-3">Feel free to explore.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="slide2.jpg"> <!-- random image -->
+                <div class="caption right-align">
+                  <h3>Enjoy!</h3>
+                  <h5 class="light grey-text text-lighten-3">Glad you're here.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="slide4.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                  <h3>Share your memories!</h3>
+                  <h5 class="light grey-text text-lighten-3">We want to know more about you.</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+                  
+          <h2 class="dark blue-text">Facebook</h2>
+            <blockquote class="white-text">
+            Facebook is defined as an online social networking website where people can create profiles, 
+            share information such as photos and quotes about themselves, and respond or link to the information 
+            posted by others. 
+            </blockquote>
+            <a class="waves-effect waves-light btn"><i class="material" href="facebook.com">Facebook</i></a>
+            <!--images for facebook-->
+            <div class="row" style="margin-top: 20px;">
+               <div class="col s12 m4"> 
+                <img class="materialboxed" width="300" src="fb1.jpg">
+               </div>
+               
+
+                <div class="col s12 m4"> 
+                    <img class="materialboxed" width="300" src="fb2.jpg">
+                </div>
+
+                <div class="col s12 m4"> 
+                    <img class="materialboxed" width="300" src="fb3.jpg">
+               </div>
+            </div>   
+            <!--end images for facebook-->
+
+        <h2 class="red-text">Youtube</h2>
+            <blockquote class="white-text">
+            A brand name for a website on which users can post, view, or share videos.
+            </blockquote>
+            <a class="waves-effect waves-light btn"><i class="material" href="youtube.com">Youtube</i></a>
+            <!--videos for youtube-->
+
+            <div class="row" style="margin-top:15px;">
+        
+                <div class="col s12 m6">
+                    <div class="video-container">
+                        <iframe width="853" height="480" src="https://www.youtube.com/embed/--AuxdQUdlo" title="How YouTube Became An Internet Video Giant" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col s12 m6">
+                    <div class="video-container">
+                        <iframe width="853" height="480" src="https://www.youtube.com/embed/xSJoGjf13sY" title="What is Youtube Handle and How to Create it | Quick and Easy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--end videos for youtube-->
+
+        <h2 class="pink-text">Instagram</h2>
+            <blockquote class="white-text">
+                The word Instagram is an amalgam of "instant camera" and "telegram." The iOS app was released through the 
+                iTunes App Store on Oct. 6, 2010, and the Android app was released on April 3, 2012. The platform's popularity 
+                skyrocketed, with the company reporting more than 40 million active users just two years after launch.
+            </blockquote>
+            <a class="waves-effect waves-light btn"><i class="material" href="instagram.com">Instagram</i></a>
+            <!--images for instagram-->
+            <div class="row" style="margin-top: 20px;">
+                <div class="col s12 m4"> 
+                 <img class="materialboxed" width="300" src="ig1.jpg">
+                </div>
+ 
+                 <div class="col s12 m4"> 
+                     <img class="materialboxed" width="300" src="ig2.jpg">
+                 </div>
+ 
+                 <div class="col s12 m4"> 
+                     <img class="materialboxed" width="300" src="ig3.jpg">
+                </div>
+             </div>   
+             <!--end images for instagram-->   
+
+        <h2 class="light blue-text">Twitter</h2>
+            <blockquote class="white-text">
+                The definition of twitter is a short burst of inconsequential information and chirps from birds, 
+                which describes the purpose of social networking on Twitter -- to share short and quick information.
+            </blockquote>
+            <a class="waves-effect waves-light btn"><i class="material" href="twitter.com">Twitter</i></a>
+            <!--images for twitter-->
+            <div class="row" style="margin-top: 20px;">
+                <div class="col s12 m4"> 
+                 <img class="materialboxed" width="300" src="twit1.jpg">
+                </div>
+ 
+                 <div class="col s12 m4"> 
+                     <img class="materialboxed" width="300" src="twit2.jpg">
+                 </div>
+ 
+                 <div class="col s12 m4"> 
+                     <img class="materialboxed" width="300" src="twit3.jpg">
+                </div>
+             </div>   
+             <!--end images for twitter-->  
+    </div>
+
+  
+    <!--end header-->  
+
+         <!--G R I D-->
+         <div class="section">
+            <div class="container">
+              
+                <h3 class="white-text text-darken-1">Grid</h3>
+    
+                <!-- 12 Columns-->
+                <blockquote><h4 class="white-text text-darken-1">12 Columns</h4></blockquote>
+                <div class="row">
+                    <div class="col s1 blue white center"><span class="flow-text">1</span></div>
+                    <div class="col s1 blue grey lighten-5 center"><span class="flow-text">2</span></div>
+                    <div class="col s1 blue lighten-5 center"><span class="flow-text">3</span></div>
+                    <div class="col s1 blue lighten-4 center"><span class="flow-text">4</span></div>
+                    <div class="col s1 blue lighten-3 center"><span class="flow-text">5</span></div>
+                    <div class="col s1 blue lighten-2 center"><span class="flow-text">6</span></div>
+                    <div class="col s1 blue lighten-1 center"><span class="flow-text">7</span></div>
+                    <div class="col s1 blue center"><span class="flow-text">8</span></div>
+                    <div class="col s1 blue darken-1 center"><span class="flow-text">9</span></div>
+                    <div class="col s1 blue darken-2 center"><span class="flow-text">10</span></div>
+                    <div class="col s1 blue darken-3 center"><span class="flow-text">11</span></div>
+                    <div class="col s1 blue darken-4 center"><span class="flow-text">12</span></div>
+                </div>
+                <!--end 12 Columns-->
+    
+                <!--Columns live inside Rows-->
+                <blockquote><h4 class="white-text text-darken-1">Columns Live Inside Rows</h4></blockquote>
+                <div class="row ">
+                    <div class="col s12 teal lighten-2 center"><span class="flow-text">This div is 12-columns wide on all screen sizes</span></div>
+                    <div class="col s6 teal lighten-3 center"><span class="flow-text">6-columns (one-half)</span></div>
+                    <div class="col s6 teal lighten-4 center"><span class="flow-text">6-columns (one-half)</span></div>
+                </div>
+                <!--end Columns live inside Rows-->
+    
+                <!--Offsets-->
+                <blockquote><h4 class="white-text text-darken-1">Offsets</h4></blockquote>
+                <div class="row">
+                    <div class="col s12 lime center "><span class="flow-text">This div is 12-columns wide on all screen sizes</span></div>
+                    <div class="col s6 lime lighten-2 center offset-s6"><span class="flow-text">6-columns (offset-by-6)</span></div>
+                </div>
+                <!--Offsets-->
+    
+                <!--Push & Pull-->
+                <blockquote><h4 class="white-text text-darken-1 ">Push and Pull</h4></blockquote>
+                <div class="row">
+                    <div class="col s12 m5 l7 push-l5 card-panel orange center"><p class="flow-text">This div is 7-columns wide on pushed to the right by 5-columns.</p></div>
+                    <div class="col hide-on-small-only m7 l5 pull-l7 card-panel orange lighten-2 center"><p class="flow-text">5-columns wide pulled to the left by 7-columns.</p></div>
+                  </div>
+                <!--end Push & Pull-->
+            
+            
+            </div>
+        </div>
+      <!--end G R I D-->   
+
+    <!--C A R D S-->
+    <div class="section">
+        <div class="container">
+            <blockquote><h4 class="white-text text-darken-1">Cards</h4></blockquote>
+            <div class="row">
+
+                <!--Card 1-->
+                <div class="col s10 m4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="gmail.jpg">
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Gmail<i class="material-icons right">more_vert</i></span>
+                            <p><a href="https://mail.google.com/mail/u/0/#inbox">kacymaala461@gmail.com</a></p>
+                        </div>
+
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Gmail<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 2-->
+                <div class="col s10 m4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="facebook.jpg">
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Facebook<i class="material-icons right">more_vert</i></span>
+                            <p><a href="https://www.facebook.com/">Kacy Maala</a></p>
+                        </div>
+
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Facebook<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 3-->
+                <div class="col s10 m4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="instagram.jpg">
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Instagram<i class="material-icons right">more_vert</i></span>
+                            <p><a href="https://www.instagram.com/">@kaycieee_m</a></p>
+                        </div>
+
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Instagram<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+      <!--end C A R D S-->
+
+      <!--C H I P S-->
+      <div class="container">
+            <blockquote><h4 class="white-text text-darken-1">Chips</h4></blockquote>
+                <div class="chip">
+                    <img src="fb1.jpg" alt="Contact Person">
+                    Kacy Maala
+                </div>       
+                <div class="chip">
+                    Tag
+                    <i class="close material-icons">close</i>
+                  </div>                        
+      </div>
+      <!--end C H I P S-->
+
+      <!--D A T E  P I C K E R-->
+      <div class="container">
+        <blockquote><h4 class="white-text text-darken-1">Date Picker</h4></blockquote>
+            <form action="">
+                <div class="input field">
+                    <input type="text" class="datepicker">
+                </div>
+            </form>
+      </div>
+      <!--end D A T E  P I C K E R-->
+
+</body>
+</html>
